@@ -1,0 +1,172 @@
+/* Global */
+/* quita el margen y pading a todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+/* tipo de letra o fuente para buscar mas fonnst visicar (google fonts oswald)  */
+font-family: "Oswald", sans-serif;
+/*fondo */
+background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23306d67' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+/* color de la letra que esta como padre*/
+color: #fff;
+   /* tamaño de la letra que esta como padre*/
+font-size: 16px;
+}
+a {
+    /* asignar color de las etiquetas (a) */
+   color: #ffffff;
+   /* quitar subrrallado de las etiquetas (a) */
+   text-decoration: none;
+ }
+  /* quitar una fuente distinta de los que trae por defecto a los (ul)*/
+ ul {
+   list-style: none;
+ }
+ 
+  /* crear un contenedor con las siguientes medidas*/
+ .container {
+   width: 95%;
+   margin: auto;
+ }
+
+.showcase {
+    position: relative;
+    width: 100%;
+       /* para darle altura a el espacio de donde se encuentra la imagen  */
+    height: 637px;
+       /* sitio recomendado para descargar img es (pexels.com), para centrar la imagen con su tamaño original utilizar codigo: no-repeat center center/cover*/
+   
+       background: 
+       /* top, transparent red */ 
+       linear-gradient(
+        rgba(23, 26, 29, 0.85),
+         rgba(23, 26, 29, 0.85)
+       ),
+       /* bottom, image */
+       url("./img/first.jpg") no-repeat center center/cover;
+   
+       display: flex;
+       /* colocar todas las lineas una debajo de otra*/
+      flex-direction: column;
+     /*centrar el texto de left-right */
+      text-align: center;
+     /*centrar el texto de arriba-abajo */
+     justify-content: center;
+    /*separar elemento de la navegacion*/
+      padding-bottom: 80px;
+    /*separar elemento de la navegacion ariiba-abajo*/
+      margin-bottom: 60px;
+      
+  }
+  .showcase h2  {
+
+    color: #FFB21F;
+        /*tamaño de letra*/
+    font-size: 55px;
+  
+  }
+  .showcase h1  {
+  
+    font-size: 55px;
+    color: #FFF;
+    /*separacion entre palabras de la misma palabra al hacer mas pequeña la imagen*/
+
+    line-height: 49px;
+    
+    /*separacion entre lineas al hacer mas pequeña la imagen*/
+    margin: 0 0 10px 0;
+  
+  }
+  
+  .showcase p {
+    color: #B1B1B1;
+    margin: 0 0 50px 0;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+       /*separacion entre letras*/
+ 
+    letter-spacing: 1px;
+       /*font de la palabra: bold, normal*/
+ 
+    font-weight: normal;
+    
+    
+  }
+
+  /* Navigation */
+.nav-main {
+    font-size: 17px;
+     /* agrupar uno del lado del otro*/
+    display: flex;
+     /* utilizar el ancho disponible decada elemento*/
+  
+    align-items:  center;
+    text-align: center;
+    height: 20px;
+    padding: 20px 0;
+  
+  }
+  /* cambiar tamaño de la imagen del menu*/
+.nav-brand {
+    width: 80px;
+  }
+    /* Navbar Left  */
+    /* agrupar uno del lado del otro dentro de las etiqutas ul*/
+.nav-main ul {
+    
+    display: flex;
+    
+} 
+ /* separar cada elemnto de la etiquta li */
+ .nav-main ul li {
+    padding: 30px;
+    
+  
+  }
+     /* es el espaciado entre las etiquetas a y el efecto que se le dio */
+  .nav-main ul li a {
+    padding: 2px;
+
+  }
+  .nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+     /* colacar los elementos a lado de la imagen con espaciado*/
+  .nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+  }
+   /* espasio entre navegacion y el otro elemento de 10 arriba y abajo de 10 y 0 a los lados  */
+hr {
+    margin: 10px 0;
+  }
+  .news-cards {     
+   align-items: center;
+   text-align: center;
+  /*centrar el texto de arriba-abajo */
+   justify-content: center;
+   /* para darle la instruccion que se requieren de 4 columnas */
+   grid-template-columns: repeat(1, 1fr);
+   
+}
+.news-cards h2 {     
+    color: #FFB21F;
+    /*tamaño de letra*/
+    font-size: 55px;
+ }
+ .news-cards h1 {
+
+    color: #B1B1B1;
+    margin: 0 0 50px 0;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: normal;
+   
+ }
+  

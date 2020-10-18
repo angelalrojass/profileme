@@ -98,6 +98,18 @@ a {
     
     
   }
+  /* Responsive Button */
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+   /*se coloca encima de los elementtos*/
+  z-index: 2;
+   /* quita la imagen menu cuando esta en tamaño normal */
+  display: none;
+}
+
 
   /* Navigation */
 .nav-main {

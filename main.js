@@ -3,6 +3,7 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
   });
 
 
+
   
   ScrollReveal().reveal('.showcase');
   ScrollReveal().reveal('.news-cards', { delay:500 });

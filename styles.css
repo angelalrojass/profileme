@@ -47,7 +47,7 @@ ul {
      /* top, transparent red */ 
      
      /* bottom, image */
-     url("./img1/3-1\ \(1\).png") no-repeat center center/cover;
+     url("./img/3-1\ \(1\).png") no-repeat center center/cover;
  
      display: flex;
      /* colocar todas las lineas una debajo de otra*/
